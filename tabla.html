@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Tabla de Clientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="js/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logixsoft</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link" href="mapa.html">Mapa</a></li>
+          <li class="nav-item"><a class="nav-link active" href="tabla.html">Tabla</a></li>
+          <li class="nav-item"><a class="nav-link" href="calor.html">Mapa de Calor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenido principal -->
+  <div class="container mt-4">
+    <h3 class="mb-3">Clientes registrados</h3>
+    <table class="table table-bordered table-striped">
+      <thead class="table-dark">
+        <tr>
+          <th>Nombre</th>
+          <th>Latitud</th>
+          <th>Longitud</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>Punto 1</td><td>13.705243</td><td>-89.24231</td></tr>
+        <tr><td>Punto 2</td><td>13.696674</td><td>-89.197927</td></tr>
+        <tr><td>Punto 3</td><td>14.692511</td><td>-87.86136</td></tr>
+        <tr><td>Punto 4</td><td>12.022747</td><td>-86.252007</td></tr>
+        <tr><td>Punto 5</td><td>8.103289</td><td>-80.596013</td></tr>
+      </tbody>
+    </table>
+  </div>
+  
+  <script>
+  function cerrarSesion() {
+    localStorage.removeItem("logueado");
+    window.location.href = "index.html";
+  }
+</script>
+
+
+</body>
+</html>

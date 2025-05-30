@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    
+  <meta charset="UTF-8">
+  <title>Mapa de Clientes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="js/estilos.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    
+
+  <!-- Menú de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Logixsoft</a>
+      <div class="collapse navbar-collapse">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item"><a class="nav-link active" href="mapa.html">Mapa</a></li>
+          <li class="nav-item"><a class="nav-link" href="tabla.html">Tabla</a></li>
+          <li class="nav-item"><a class="nav-link" href="calor.html">Mapa de Calor</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Contenedor del mapa -->
+  <div class="container mt-4">
+    <h3 class="mb-3">Ubicación de Clientes</h3>
+    <div id="mapa" style="height: 500px; width: 100%;"></div>
+  </div>
+
+  <script src="js/mapa.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBjyM0CyjiksJbMk4SVzZTz-Uzn5QusoRE&callback=initMap" async defer></script>
+  <script>
+  function cerrarSesion() {
+    localStorage.removeItem("logueado");
+    window.location.href = "index.html";
+  }
+</script>
+</body>
+</html>
